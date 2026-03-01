@@ -1,3 +1,5 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
 package(default_visibility = ["//visibility:private"])
 
 cc_binary(
@@ -7,6 +9,6 @@ cc_binary(
         "//visibility:public",
     ],
     deps = [
-        "@phtree//phtree",
+        "@phtree-cpp//:phtree",
     ],
 )

@@ -1,3 +1,5 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
 package(default_visibility = ["//visibility:private"])
 
 cc_binary(
@@ -7,7 +9,7 @@ cc_binary(
         "//visibility:public",
     ],
     deps = [
-        "@absl//absl/container:flat_hash_set",
-        "@phtree//phtree:phtree",
+        "@abseil-cpp//absl/container:flat_hash_set",
+        "@phtree-cpp//:phtree",
     ],
 )
